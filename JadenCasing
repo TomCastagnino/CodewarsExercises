@@ -4,3 +4,12 @@ String.prototype.toJadenCase = function (jadenStr) {
     return word[0].toUpperCase() +
     word.slice(1)}
                 ).join('');}
+
+
+function toJadenCase(someString) {
+  let someList = someString.split(" ")
+  let result = ""
+  someList.forEach(i => result += i[0] + i.substring(1) + " ")
+  result.trimEnd()
+  return result
+}
